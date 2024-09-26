@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario de Recordatorios</title>
+    <!-- FullCalendar CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.css" rel="stylesheet">
+    <!-- Tu hoja de estilos -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Calendario de Recordatorios</h1>
+        <div id="calendar"></div>
+    </div>
+
+    <div id="eventModal" class="modal">
+        <div class="modal-content">
+            <h2 id="modalTitle">Crear nuevo recordatorio</h2>
+            <input type="text" id="eventTitleInput" placeholder="Título del recordatorio">
+            <button id="saveBtn">Guardar</button>
+            <button id="deleteBtn">Eliminar</button>
+            <button id="cancelBtn">Cancelar</button>
+        </div>
+    </div>
+
+
+    <!-- FullCalendar JS -->
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.1/main.min.js"></script>
+    <!-- Tu script de lógica -->
+    <script src="script.js"></script>
+</body>
+
+</html>
